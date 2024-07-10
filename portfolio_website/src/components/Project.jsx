@@ -1,14 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Carousel from 'react-bootstrap/Carousel';
+import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Project = ({ name, description, category, technologies, image, github, link }) => {
+const Project = ({ name, description, category, technologies, images, github, link }) => {
+    const [showModal, setShowModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const handleImageClick = (image) => {
+        setSelectedImage(image);
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => setShowModal(false);
+
     return (
-        <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mb-6 w-full max-w-3xl">
-            <h2 className="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">{name}</h2>
-            <img className="w-full h-64 object-cover mb-4 rounded pointer-events-none" src={image} alt={name} />
-            <p className="text-gray-700 dark:text-gray-300 mb-2">{description}</p>
-            <p className="text-gray-500 dark:text-gray-400 mb-2"><strong>Category:</strong> {category}</p>
+        <div className="bg-gray-800 shadow-md rounded-lg p-6 mb-6 w-full max-w-3xl">
+            <h2 className="text-2xl font-bold mb-2 text-gray-100">{name}</h2>
+            
+            <Carousel className="mb-4" interval={null}>
+                {images.map((image, index) => (
+                    <Carousel.Item key={index}>
+                        <img
+                            className="d-block w-100 h-64 object-contain rounded cursor-pointer"
+                            src={image}
+                            alt={`${name} screenshot ${index + 1}`}
+                            onClick={() => handleImageClick(image)}
+                        />
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+            
+            <p className="text-gray-300 mb-2">{description}</p>
+            <p className="text-gray-400 mb-2"><strong>Category:</strong> {category}</p>
             <div className="flex flex-wrap mb-2">
                 {technologies.map((tech, index) => (
                     tech.url ? (
@@ -17,12 +43,12 @@ const Project = ({ name, description, category, technologies, image, github, lin
                             href={tech.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-gray-200 dark:bg-green-600 text-gray-800 dark:text-gray-200 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-md hover:underline"
+                            className="bg-green-600 text-gray-200 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-md hover:underline"
                         >
                             {tech.name}
                         </a>
                     ) : (
-                        <span className="bg-gray-200 dark:bg-green-600 text-gray-800 dark:text-gray-200 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-md" key={index}>{tech.name}</span>
+                        <span className="bg-green-600 text-gray-200 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-md" key={index}>{tech.name}</span>
                     )
                 ))}
             </div>
@@ -38,6 +64,16 @@ const Project = ({ name, description, category, technologies, image, github, lin
                     </a>
                 )}
             </div>
+
+            <Modal show={showModal} onHide={handleCloseModal} centered size='xl'>
+                <Modal.Body>
+                    <img
+                        className="d-block max-h-fit"
+                        src={selectedImage}
+                        alt="Large view"
+                    />
+                </Modal.Body>
+            </Modal>
         </div>
     );
 };
