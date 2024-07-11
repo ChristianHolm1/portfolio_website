@@ -1,10 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const History = () => {
-    return (
-        <p>hi</p>
-    )
-
-};
+function History() {
+  return <p>hi</p>;
+}
 
 export default History;
