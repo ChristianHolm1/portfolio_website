@@ -6,8 +6,8 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto flex justify-center items-center px-4">
-        <p className="text-sm">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center px-4">
+        <p className="text-sm m-0">
           &copy; 2024 Christian Holm. All rights reserved.
         </p>
         <div className="flex space-x-4 px-4">
