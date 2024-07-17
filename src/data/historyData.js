@@ -1,38 +1,53 @@
 export const educationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University XYZ",
-    year: "2015",
+    degree: "AP in Computer Science",
+    institution: "University College of Northern Denmark Aalborg",
+    year: "2022-2024",
   },
   {
-    degree: "Master of Science in Data Science",
-    institution: "ABC Institute",
-    year: "2018",
+    degree: "HTX",
+    institution: "UCH Uddannelsescenter Holstebro",
+    year: "2017-2020",
   },
 ];
 
 export const projectsData = [
   {
-    name: "Project A",
-    description: "Developed a web application for XYZ",
-    year: "2015",
+    name: "Portfolio Website",
+    description: "You are currently viewing this project :)",
+    year: "2024",
   },
   {
-    name: "Project B",
-    description: "Implemented a machine learning model for ABC",
-    year: "2017 - 2019",
+    name: "Price matching optimization system",
+    description: "Optimization of price matching system for Coolshop",
+    year: "2024",
+  },
+  {
+    name: "Energy Label Identification",
+    description: "Identify and verify energy labels of home appliances",
+    year: "2023",
+  },
+  {
+    name: "PI approximater",
+    description: "Visual representation of the approximation of PI",
+    year: "2023",
+  },
+  {
+    name: "Employee Time Tracking System",
+    description: "Time tracking system for employees",
+    year: "2023",
   },
 ];
 
 export const workExperienceData = [
   {
-    position: "Software Engineer",
-    company: "Tech Company XYZ",
-    year: "2016 - Present",
+    position: "Software Developer Intern",
+    company: "Create it REAL",
+    year: "2024",
   },
   {
-    position: "Data Analyst",
-    company: "Data Analytics Inc.",
-    year: "2014 - 2016",
+    position: "Temporary Agency Work",
+    company: "AktivPersonale/JKS",
+    year: "2020-2021",
   },
 ];

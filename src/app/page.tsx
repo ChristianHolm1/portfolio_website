@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import History from "../components/History";
 import Project from "../components/Project";
 
-function Home() {
+function Page() {
   return (
     <div>
       <main className="flex flex-col items-center justify-between px-4 md:px-24 pt-12 min-h-screen bg-gray-900">
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Page;

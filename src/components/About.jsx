@@ -9,17 +9,20 @@ function About() {
       </h1>
       <div className="flex flex-col md:flex-row items-center md:items-start">
         <div className="flex-1 md:mr-6 mb-6 md:mb-0">
-          <p className="text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi
-            tempora possimus, natus error, eveniet laborum consequuntur
-            dignissimos consectetur suscipit, ea iure neque sed. Doloribus quis
-            qui eaque rem sint?
+          <p className="text-gray-300 text-lg">
+            Welcome to my portfolio! I am a full-stack web developer with an AP
+            in Computer Science and passion for coding! I have experience with
+            many fields of programming from Java, Python, and C# to web
+            development with React and JavaScript. I am always looking to learn
+            new technologies and improve my skills. I am currently seeking new
+            opportunities to work on exciting projects, feel free to contact me
+            if you have any questions!
           </p>
         </div>
         <div className="flex-shrink-0">
           <Image
             className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full pointer-events-none"
-            src="/images/kirbyknife.jpg"
+            src="/images/my_picture.jpg"
             width={192}
             height={192}
             priority

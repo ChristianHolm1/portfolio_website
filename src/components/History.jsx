@@ -58,7 +58,7 @@ function History() {
   const historyData = combineAndSortData(
     educationData,
     projectsData,
-    workExperienceData,
+    workExperienceData
   );
 
   const iconMapping = {
@@ -75,15 +75,14 @@ function History() {
 
   return (
     <div className="py-4 md:px-0 max-w-6xl m-auto text-gray-200">
-      <Timeline position="right">
+      <Timeline>
         {historyData.map((item, index) => {
           const IconComponent = iconMapping[item.type];
           return (
             <TimelineItem key={index}>
               <TimelineOppositeContent
                 sx={{ m: "auto 0" }}
-                align="right"
-                variant="body2"
+                variant="body3"
                 fontSize={15}
                 fontWeight={600}
               >
@@ -102,11 +101,16 @@ function History() {
                   }
                 />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span" fontWeight={600}>
+              <TimelineContent>
+                <Typography
+                  variant="h6"
+                  component="span"
+                  fontWeight={600}
+                  className="break-all"
+                >
                   {item.degree || item.name || item.position}
                 </Typography>
-                <Typography fontSize={13}>
+                <Typography fontSize={13} className="break-all">
                   {item.institution || item.description || item.company}
                 </Typography>
               </TimelineContent>
