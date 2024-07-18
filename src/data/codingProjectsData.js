@@ -17,7 +17,7 @@ export const codingProjectsData = [
       "/images/project_energy-label-detection/image.png",
       "/images/project_energy-label-detection/image2.png",
       "/images/project_energy-label-detection/image3.png",
-      "/images/project_energy-label-detection/image4.jpg",
+      "/images/project_energy-label-detection/image4.png",
     ],
     github: "https://github.com/ChristianHolm1/hvidevare_scanning",
     link: "https://household-appliance-website.web.app/frontpage",
@@ -39,7 +39,6 @@ export const codingProjectsData = [
       "/images/project_price-matching/image.png",
       "/images/project_price-matching/image2.png",
       "/images/project_price-matching/image3.png",
-      "/images/project_price-matching/image4.png",
     ],
     github: "https://github.com/ChristianHolm1/coolshop-price-match",
   },
@@ -58,12 +57,7 @@ export const codingProjectsData = [
         url: "https://www.microsoft.com/en-us/sql-server/sql-server-downloads",
       },
     ],
-    images: [
-      "/images/project_employee-time-tracking/image.png",
-      "/images/project_employee-time-tracking/image2.png",
-      "/images/project_employee-time-tracking/image3.png",
-      "/images/project_employee-time-tracking/image4.png",
-    ],
+    images: ["/images/project_employee-time-tracking/image.png"],
     github: "https://github.com/ChristianHolm1/3-Semester-Projekt",
   },
   {
@@ -80,5 +74,21 @@ export const codingProjectsData = [
       "/images/project_pi-approximation/running-demo.gif",
     ],
     github: "https://github.com/ChristianHolm1/pi-approximation",
+  },
+  {
+    name: "Portfolio",
+    description: "This is my portfolio website. It's made with Next.js.",
+    category: "Web Development",
+    technologies: [
+      { name: "Next.js", url: "https://nextjs.org/" },
+      { name: "React", url: "https://reactjs.org/" },
+      { name: "JavaScript", url: "https://www.javascript.com/" },
+    ],
+    images: [
+      "/images/project_portfolio/image.png",
+      "/images/project_portfolio/image2.png",
+    ],
+    github: "https://github.com/ChristianHolm1/portfolio_website",
+    link: "https://christianholm.net",
   },
 ];
