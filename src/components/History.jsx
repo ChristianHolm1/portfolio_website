@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import Timeline from "@mui/lab/Timeline";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
@@ -58,7 +59,7 @@ function History() {
   const historyData = combineAndSortData(
     educationData,
     projectsData,
-    workExperienceData
+    workExperienceData,
   );
 
   const iconMapping = {
