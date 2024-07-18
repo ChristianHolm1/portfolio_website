@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-array-index-key */
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Modal from "react-bootstrap/Modal";
@@ -34,11 +36,9 @@ function Project() {
           <Carousel className="mb-4" interval={null}>
             {project.images.map((image, imgIndex) => (
               <Carousel.Item key={`${project.name}-image-${imgIndex}`}>
-                <Image
+                <img
                   className="d-block w-100 rounded cursor-pointer"
                   src={image}
-                  width={800}
-                  height={450}
                   alt={`${project.name} screenshot ${imgIndex + 1}`}
                   onClick={() => handleImageClick(image)}
                 />
@@ -99,12 +99,10 @@ function Project() {
           <Modal show={showModal} onHide={handleCloseModal} centered size="xl">
             <Modal.Header closeButton />
             <Modal.Body>
-              <Image
+              <img
                 src={selectedImage}
                 alt="Large view"
-                layout="responsive"
-                width={1200}
-                height={675}
+                className="w-full rounded-lg"
               />
             </Modal.Body>
           </Modal>

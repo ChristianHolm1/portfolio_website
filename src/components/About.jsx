@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable react/no-array-index-key */
 import React from "react";
 
 function About() {
@@ -20,12 +20,9 @@ function About() {
           </p>
         </div>
         <div className="flex-shrink-0">
-          <Image
+          <img
             className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full pointer-events-none"
             src="/images/my_picture.jpg"
-            width={192}
-            height={192}
-            priority
             alt="Christian Holm"
           />
         </div>
