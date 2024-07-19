@@ -73,7 +73,7 @@ export const codingProjectsData = [
       "/images/project_pi-approximation/approximated-pi.png",
       "/images/project_pi-approximation/running-demo.gif",
     ],
-    github: "https://github.com/ChristianHolm1/pi-approximation",
+    github: "https://github.com/ChristianHolm1/processing_pi_approximater",
   },
   {
     name: "Portfolio",
