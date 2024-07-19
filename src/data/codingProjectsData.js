@@ -83,6 +83,7 @@ export const codingProjectsData = [
       { name: "Next.js", url: "https://nextjs.org/" },
       { name: "React", url: "https://reactjs.org/" },
       { name: "JavaScript", url: "https://www.javascript.com/" },
+      { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
     ],
     images: [
       "/images/project_portfolio/image.png",
