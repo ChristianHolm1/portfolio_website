@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 function About() {
