@@ -1,5 +1,10 @@
 export const educationData = [
   {
+    degree: "Bachalor in Computer Science",
+    institution: "University College of Northern Denmark Aalborg",
+    year: "2025",
+  },
+  {
     degree: "AP in Computer Science",
     institution: "University College of Northern Denmark Aalborg",
     year: "2022-2024",
@@ -40,6 +45,11 @@ export const projectsData = [
 ];
 
 export const workExperienceData = [
+  {
+    position: "Software Developer Intern",
+    company: "Valoks",
+    year: "2024-2025",
+  },
   {
     position: "Software Developer Intern",
     company: "Create it REAL",
