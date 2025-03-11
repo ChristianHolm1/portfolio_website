@@ -1,6 +1,21 @@
 /* eslint-disable import/prefer-default-export */
 export const codingProjectsData = [
   {
+    name: "Valoks company website",
+    description:
+      "Did a overhaul and redesign of the company website for Valoks. The website is made with Angular.",
+    technologies: [
+      { name: "JavaScript", url: "https://www.javascript.com/" },
+      { name: "Angular", url: "https://angular.dev/" },
+    ],
+    images: [
+      "/images/project_valoks/image2.png",
+      "/images/project_valoks/image.png",
+      "/images/project_valoks/image3.png",
+    ],
+    link: "https://valoks.com/",
+  },
+  {
     name: "Energy Label Identification",
     description:
       "This is a program made to verify and identify the energy label of home appliances. It uses object detection (YOLO) to identify the energy label, and then displays it in an Angular frontend.",
