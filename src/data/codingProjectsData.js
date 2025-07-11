@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable import/prefer-default-export */
 export const codingProjectsData = [
   {
-    name: "Valoks company website",
+    name: "Valoks Company Website",
     description:
-      "Did a overhaul and redesign of the company website for Valoks. The website is made with Angular.",
+      "Overhauled and redesigned the company website for Valoks with Angular.",
     technologies: [
       { name: "JavaScript", url: "https://www.javascript.com/" },
       { name: "Angular", url: "https://angular.dev/" },
@@ -38,7 +39,7 @@ export const codingProjectsData = [
     link: "https://household-appliance-website.web.app/frontpage",
   },
   {
-    name: "Price matching optimization system",
+    name: "Price Matching Optimization System",
     description:
       "This is a program made to optimize the price matching system for Coolshop. It uses a React frontend to display the optimization system, and a Django backend to handle the optimization.",
     category: "Web Development and Web Scraping",
@@ -76,7 +77,7 @@ export const codingProjectsData = [
     github: "https://github.com/ChristianHolm1/3-Semester-Projekt",
   },
   {
-    name: "PI approximater",
+    name: "PI Approximator",
     description:
       "This is a program made to visualize the approximation of PI using the Monte Carlo method. It uses processing to display the visualization.",
     category: "Visual Programming",
@@ -92,7 +93,7 @@ export const codingProjectsData = [
   },
   {
     name: "Portfolio",
-    description: "This is my portfolio website. It's made with Next.js.",
+    description: "This is my portfolio website, build with Next.js.",
     category: "Web Development",
     technologies: [
       { name: "Next.js", url: "https://nextjs.org/" },
