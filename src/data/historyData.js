@@ -1,12 +1,12 @@
 export const educationData = [
   {
-    degree: "Bachalor in Computer Science",
-    institution: "University College of Northern Denmark Aalborg",
+    degree: "Bachelor in Computer Science",
+    institution: "University College of Northern Denmark, Aalborg",
     year: "2025",
   },
   {
     degree: "AP in Computer Science",
-    institution: "University College of Northern Denmark Aalborg",
+    institution: "University College of Northern Denmark, Aalborg",
     year: "2022-2024",
   },
   {
@@ -23,13 +23,13 @@ export const projectsData = [
     year: "2024",
   },
   {
-    name: "Price matching optimization system",
+    name: "Price Matching Optimization System",
     description: "Optimization of price matching system for Coolshop",
     year: "2024",
   },
   {
     name: "Energy Label Identification",
-    description: "Identify and verify energy labels of home appliances",
+    description: "Identify and verify energy labels on home appliances",
     year: "2023",
   },
   {
@@ -46,6 +46,11 @@ export const projectsData = [
 
 export const workExperienceData = [
   {
+    position: "Software Developer Student Worker",
+    company: "Center for Administration: Data, Region Nordjylland",
+    year: "2025",
+  },
+  {
     position: "Software Developer Intern",
     company: "Valoks",
     year: "2024-2025",
@@ -56,7 +61,7 @@ export const workExperienceData = [
     year: "2024",
   },
   {
-    position: "Temporary Agency Work",
+    position: "Temporary Agency Worker",
     company: "AktivPersonale/JKS",
     year: "2020-2021",
   },
